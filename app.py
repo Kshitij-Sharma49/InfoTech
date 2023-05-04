@@ -49,7 +49,7 @@ def add_ipfs_link():
         writer.writerow([serial_no+1, doc_id, ipfs_link])
     
     # Run another Python script in the same directory
-    # subprocess.run(['python', 'similarity.py'])
+    subprocess.run(['python', 'similarity.py'])
     
     return jsonify({'message': 'Document added successfully.'}), 200    
 
